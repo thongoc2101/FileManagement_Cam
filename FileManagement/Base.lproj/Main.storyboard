@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r62-S6-auX">
+                                <rect key="frame" x="0.0" y="20" width="320" height="20.5"/>
+                                <color key="backgroundColor" red="0.83568263310000002" green="1" blue="0.53938134760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-NE-n9l">
+                                <rect key="frame" x="160.5" y="41.5" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Create Dicrectory"/>
+                                <connections>
+                                    <action selector="btnCreateDirectoryAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHH-Bx-XOL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rH7-Iq-zJ5">
+                                <rect key="frame" x="0.0" y="41.5" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Create File"/>
+                                <connections>
+                                    <action selector="btnCreateFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Kb-j5-NOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLv-fd-LTb">
+                                <rect key="frame" x="160" y="72.5" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Read File"/>
+                                <connections>
+                                    <action selector="btnReadFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="251-TW-aj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7g-ID-yLf">
+                                <rect key="frame" x="0.0" y="72.5" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Write File"/>
+                                <connections>
+                                    <action selector="btnWriteFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aiz-nI-OM5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-gF-kEF">
+                                <rect key="frame" x="160.5" y="104" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Copy File"/>
+                                <connections>
+                                    <action selector="btnCopyFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5JI-NE-Vog"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX5-kz-cNT">
+                                <rect key="frame" x="0.0" y="104" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Move File"/>
+                                <connections>
+                                    <action selector="btnMoveFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEj-YC-aCc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEs-GN-dmr">
+                                <rect key="frame" x="0.0" y="135" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="File Permissions"/>
+                                <connections>
+                                    <action selector="btnFilePermissionsAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65Y-rf-iLr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuo-Mf-F0v">
+                                <rect key="frame" x="160.5" y="166" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Remove File"/>
+                                <connections>
+                                    <action selector="btnRemoveFileAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKP-D6-FKG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJw-VF-dt8">
+                                <rect key="frame" x="0.0" y="166" width="159.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Dicrectory Contants"/>
+                                <connections>
+                                    <action selector="btnDirectoryConstantAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kI3-By-hKn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-Ot-h19">
+                                <rect key="frame" x="161" y="135" width="159" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Equality Check"/>
+                                <connections>
+                                    <action selector="btnEqualityTestAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZkD-9A-7tO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zEs-GN-dmr" firstAttribute="width" secondItem="BB6-Ot-h19" secondAttribute="width" id="0aR-6l-swv"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="1jh-n6-Mmq"/>
+                            <constraint firstAttribute="trailing" secondItem="6e8-gF-kEF" secondAttribute="trailing" id="1r3-cU-pqz"/>
+                            <constraint firstAttribute="trailing" secondItem="6e8-gF-kEF" secondAttribute="trailing" id="21A-zb-6Ch"/>
+                            <constraint firstItem="DJw-VF-dt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3YB-W8-eTy"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="leading" secondItem="zEs-GN-dmr" secondAttribute="trailing" constant="1" id="4aX-Mc-oEg"/>
+                            <constraint firstAttribute="trailing" secondItem="gLv-fd-LTb" secondAttribute="trailing" id="4uA-78-2qg"/>
+                            <constraint firstItem="zEs-GN-dmr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4va-ke-IDH"/>
+                            <constraint firstItem="rH7-Iq-zJ5" firstAttribute="width" secondItem="Y7g-ID-yLf" secondAttribute="width" id="74D-75-oNw"/>
+                            <constraint firstItem="zEs-GN-dmr" firstAttribute="centerY" secondItem="BB6-Ot-h19" secondAttribute="centerY" id="7KX-nA-Cs6"/>
+                            <constraint firstItem="r62-S6-auX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9g9-MP-lqZ"/>
+                            <constraint firstAttribute="trailing" secondItem="6e8-gF-kEF" secondAttribute="trailing" id="Bl1-eU-i86"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="leading" secondItem="UX5-kz-cNT" secondAttribute="trailing" constant="1" id="CmP-FG-r4d"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="CpA-jm-c2K"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DAr-L1-KpS"/>
+                            <constraint firstItem="rH7-Iq-zJ5" firstAttribute="height" secondItem="Y7g-ID-yLf" secondAttribute="height" id="GZt-x0-dOV"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="HGs-8C-vAM"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I1r-nS-pdD"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="top" secondItem="UX5-kz-cNT" secondAttribute="bottom" constant="1" id="Iok-bI-VBI"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="leading" secondItem="zEs-GN-dmr" secondAttribute="trailing" constant="1" id="KKu-qw-zvX"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="height" secondItem="DJw-VF-dt8" secondAttribute="height" id="Kbz-Gy-EeZ"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="centerY" secondItem="6e8-gF-kEF" secondAttribute="centerY" id="LZe-An-xl5"/>
+                            <constraint firstItem="gLv-fd-LTb" firstAttribute="leading" secondItem="Y7g-ID-yLf" secondAttribute="trailing" constant="1" id="Lgg-TF-37X"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="leading" secondItem="DJw-VF-dt8" secondAttribute="trailing" constant="1" id="OGO-ae-Zon"/>
+                            <constraint firstAttribute="trailing" secondItem="BB6-Ot-h19" secondAttribute="trailing" id="OHT-70-hjk"/>
+                            <constraint firstItem="n6f-NE-n9l" firstAttribute="height" secondItem="rH7-Iq-zJ5" secondAttribute="height" id="Pfs-2p-0dS"/>
+                            <constraint firstItem="rH7-Iq-zJ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QsM-XO-eVE"/>
+                            <constraint firstItem="n6f-NE-n9l" firstAttribute="top" secondItem="r62-S6-auX" secondAttribute="bottom" constant="1" id="RIx-6z-Q58"/>
+                            <constraint firstItem="Y7g-ID-yLf" firstAttribute="top" secondItem="rH7-Iq-zJ5" secondAttribute="bottom" constant="1" id="Re9-ws-3Th"/>
+                            <constraint firstAttribute="trailing" secondItem="r62-S6-auX" secondAttribute="trailing" id="S3f-hn-TDp"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="leading" secondItem="DJw-VF-dt8" secondAttribute="trailing" constant="1" id="SPH-3G-riy"/>
+                            <constraint firstItem="gLv-fd-LTb" firstAttribute="height" secondItem="Y7g-ID-yLf" secondAttribute="height" id="Sne-0G-UPc"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="leading" secondItem="UX5-kz-cNT" secondAttribute="trailing" constant="1" id="Tk8-Kc-aVU"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="leading" secondItem="zEs-GN-dmr" secondAttribute="trailing" constant="1" id="WET-lV-W6R"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="gLv-fd-LTb" secondAttribute="bottom" constant="1" id="WKS-l3-DFN"/>
+                            <constraint firstItem="r62-S6-auX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wg7-fO-VS7"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="height" secondItem="UX5-kz-cNT" secondAttribute="height" id="Wvt-ES-ULd"/>
+                            <constraint firstItem="DJw-VF-dt8" firstAttribute="top" secondItem="zEs-GN-dmr" secondAttribute="bottom" constant="1" id="XDr-hv-uJN"/>
+                            <constraint firstItem="Y7g-ID-yLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bWX-4e-0hw"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="leading" secondItem="UX5-kz-cNT" secondAttribute="trailing" constant="1" id="grf-ER-0mR"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="gLv-fd-LTb" secondAttribute="bottom" constant="1" id="jEP-eS-LDG"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="width" secondItem="6e8-gF-kEF" secondAttribute="width" id="jlG-xF-Xb4"/>
+                            <constraint firstItem="rH7-Iq-zJ5" firstAttribute="top" secondItem="r62-S6-auX" secondAttribute="bottom" constant="1" id="kqZ-9F-96u"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mWe-zd-kM9"/>
+                            <constraint firstItem="Y7g-ID-yLf" firstAttribute="width" secondItem="gLv-fd-LTb" secondAttribute="width" id="nLf-8d-ppH"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="top" secondItem="zEs-GN-dmr" secondAttribute="bottom" constant="1" id="nZi-m7-HPg"/>
+                            <constraint firstItem="rH7-Iq-zJ5" firstAttribute="width" secondItem="n6f-NE-n9l" secondAttribute="width" id="nmf-8R-tNp"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="qXW-Rc-cQC"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="leading" secondItem="DJw-VF-dt8" secondAttribute="trailing" constant="1" id="qaB-H3-JJE"/>
+                            <constraint firstItem="gLv-fd-LTb" firstAttribute="top" secondItem="n6f-NE-n9l" secondAttribute="bottom" constant="1" id="riS-no-KCJ"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="rrj-wR-Hdz"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="leading" secondItem="UX5-kz-cNT" secondAttribute="trailing" constant="1" id="rrx-N3-Tfs"/>
+                            <constraint firstItem="Wuo-Mf-F0v" firstAttribute="leading" secondItem="DJw-VF-dt8" secondAttribute="trailing" constant="1" id="sMR-fJ-zgR"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sXr-ZP-720"/>
+                            <constraint firstAttribute="trailing" secondItem="Wuo-Mf-F0v" secondAttribute="trailing" id="sm3-DA-TQ2"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="tEQ-Si-3nY"/>
+                            <constraint firstItem="UX5-kz-cNT" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="tJE-cu-P4m"/>
+                            <constraint firstItem="DJw-VF-dt8" firstAttribute="width" secondItem="Wuo-Mf-F0v" secondAttribute="width" id="tnv-E1-l0M"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="Y7g-ID-yLf" secondAttribute="bottom" constant="1" id="tue-EV-tEk"/>
+                            <constraint firstAttribute="trailing" secondItem="n6f-NE-n9l" secondAttribute="trailing" id="u3e-VO-ca4"/>
+                            <constraint firstItem="6e8-gF-kEF" firstAttribute="top" secondItem="gLv-fd-LTb" secondAttribute="bottom" constant="1" id="wQk-mY-VRd"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="height" secondItem="zEs-GN-dmr" secondAttribute="height" id="xbv-CQ-zrL"/>
+                            <constraint firstItem="BB6-Ot-h19" firstAttribute="leading" secondItem="zEs-GN-dmr" secondAttribute="trailing" constant="1" id="xke-yn-jVX"/>
+                            <constraint firstItem="n6f-NE-n9l" firstAttribute="leading" secondItem="rH7-Iq-zJ5" secondAttribute="trailing" constant="1" id="y9s-ZE-gmv"/>
+                            <constraint firstItem="zEs-GN-dmr" firstAttribute="top" secondItem="UX5-kz-cNT" secondAttribute="bottom" constant="1" id="yJ4-fP-WWp"/>
+                            <constraint firstItem="DJw-VF-dt8" firstAttribute="centerY" secondItem="Wuo-Mf-F0v" secondAttribute="centerY" id="zZ5-o3-EwY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCreateFile" destination="rH7-Iq-zJ5" id="jCU-iv-bHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+</document>
