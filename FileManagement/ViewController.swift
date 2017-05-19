@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     var fileManager: FileManager?
     var documentDir: NSString?
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fileManager = FileManager.default
